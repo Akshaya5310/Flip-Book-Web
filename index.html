@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flip Book</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <h1>Hello budy</h1>
+    <div class="container">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+            <div id="cover">
+                <img src="img/1.jpg">
+            </div>
+            <div class="page-container">
+                <div class="page" id="p1">
+                    <div class="back">
+                        <img src="img/2.jpg">
+                        <label class="bacl-btn" for="c1">Back</label>
+                    </div>
+                    <div class="front">
+                        <h2>Apple phone</h2>
+                        <p>Apple is good brand</p>
+                        <label class="next-btn" for="c1">Next</label>
+                    </div>
+                </div>
+
+
+                <div class="page" id="p2">
+                    <div class="back">
+                        <img src="img/3.jpg">
+                        <label class="bacl-btn" for="c2">Back</label>
+                    </div>
+                    <div class="front">
+                        <h2>phone</h2>
+                        <p>Apple is good brand</p>
+                        <label class="next-btn" for="c2">Next</label>
+                    </div>
+                </div>
+
+
+                <div class="page" id="p3">
+                    <div class="back">
+                        <h2>End</h2>
+                        <label class="bacl-btn" for="c3">Back</label>
+                    </div>
+                    <div class="front">
+                        <h2>phone</h2>
+                        <p>Apple is good brand</p>
+                        <label class="next-btn" for="c3">Next</label>
+                    </div>
+                </div>
+
+            </div>
+    </div>
 </body>
 </html>
