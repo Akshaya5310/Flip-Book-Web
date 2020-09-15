@@ -3,6 +3,7 @@ body{
    height: 100vh;
    display: flex;
    justify-content: center; 
+   background-color: darkgray;
 }
 input{
     display: none;
@@ -11,17 +12,54 @@ img{
     width: 100%;
     height: 100%;
 }
+.b1{
+    margin-top: 25px;
+    margin-left: 90px;
+    height: 550px;
+    width: 250px;
+    
+}
+
+h2, h3{
+    margin-left: 7px;
+}
+h4{
+    margin-left: 25px;
+}
+a{
+    margin-left: 7px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 18px;
+    display: inline; 
+    padding: 5px;
+    border: 1px solid gray;  
+    background-color: rgb(228, 162, 39); 
+}
+
 .container{
     display: flex;
-    margin-top: 180px;
+    margin-top: 100px;
 }
 #cover{
-    width: 250px;
-    height: 400px;
+    width: 450px;
+    height: 600px;
 }
+
+.coverheading{
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    text-align: center;
+    font-size: 40px;
+    /* cursor: pointer; */
+}
+
+
 .page-container{
-    width: 250px;
-    height: 400px;
+    width: 450px;
+    height: 600px;
     position: relative;
     perspective: 1500px;
 }
@@ -46,11 +84,13 @@ img{
     left: 0;
 }
 .front{
-    background-color: yellowgreen;
+    background-color: rgb(255, 209, 152);
     box-sizing: border-box;
-    padding: 0 13px;
+    padding: 0px;
+    color: black;
 }
 .back{
+    background-color: white;
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
@@ -59,21 +99,32 @@ img{
     bottom: 13px;
     right: 13px;
     cursor: pointer;
+    color: black;
 }
 .back-btn{
     position: absolute;
     bottom: 13px;
     left: 13px;
     cursor: pointer;
+    color: black;
 }
 
 #p1{
-    z-index: 3;
+    z-index: 6;
 }
 #p2{
-    z-index: 2;
+    z-index: 5;
 }
 #p3{
+    z-index: 4;
+}
+#p4{
+    z-index: 3;
+}
+#p5{
+    z-index: 2;
+}
+#p6{
     z-index: 1;
 }
 
@@ -89,6 +140,21 @@ img{
     transform: rotateY(-180deg);
     z-index: 3;
 }
-#p3{
+
+#c4:checked ~ .page-container #p4{
+    transform: rotateY(-180deg);
+    z-index: 4;
+}
+#c5:checked ~ .page-container #p5{
+    transform: rotateY(-180deg);
+    z-index: 5;
+}
+#c6:checked ~ .page-container #p6{
+    transform: rotateY(-180deg);
+    z-index: 6;
+}
+
+
+#p7{
     background-color: aqua;
 }
