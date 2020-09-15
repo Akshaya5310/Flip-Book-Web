@@ -2,8 +2,11 @@ body{
    margin: 0;
    height: 100vh;
    display: flex;
-   justify-content: center; 
-   background-color: darkgray;
+   /* justify-content: center;  */
+   margin-top: 40px;
+   margin-left: 850px;
+   /* background: radial-gradient(rgb(181, 233, 84),#beb423); */
+   
 }
 input{
     display: none;
@@ -14,9 +17,9 @@ img{
 }
 .b1{
     margin-top: 25px;
-    margin-left: 90px;
-    height: 550px;
-    width: 250px;
+    margin-left: 80px;
+    height: 450px;
+    width: 200px;
     
 }
 
@@ -25,6 +28,7 @@ h2, h3{
 }
 h4{
     margin-left: 25px;
+    font-size: 14px;
 }
 a{
     margin-left: 7px;
@@ -43,8 +47,8 @@ a{
     margin-top: 100px;
 }
 #cover{
-    width: 450px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
 }
 
 .coverheading{
@@ -58,8 +62,8 @@ a{
 
 
 .page-container{
-    width: 450px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
     position: relative;
     perspective: 1500px;
 }
