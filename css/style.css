@@ -2,9 +2,9 @@ body{
    margin: 0;
    height: 100vh;
    display: flex;
-   /* justify-content: center;  */
+   justify-content: center; 
    margin-top: 40px;
-   margin-left: 850px;
+   /* margin-left: 700px; */
    /* background: radial-gradient(rgb(181, 233, 84),#beb423); */
    
 }
